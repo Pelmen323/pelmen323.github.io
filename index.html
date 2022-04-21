@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pelmen323</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+html {
+  max-width: 1920px;
+  position: relative;
+}
+
+body {
+  font-family: Roboto;
+  background: url(photo1.jpg);
+  min-height: 100%;
+}
+
+/* Style the header */
+.header {
+  font-family: Roboto;
+  background-color: #f1f1f1;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+section {
+  height: 200px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+div.column {
+  color: #fff;
+  background: #519ff85e;
+  padding: 12px;
+  width: 300px;
+  /* height: 300px; */
+  text-align: center;
+}
+
+/* centering with CSS Grid */
+.column-center {
+  display: grid;
+  justify-content: center;
+  gap: 15px;
+  align-content: center;
+  text-align: center;
+  grid-auto-flow: column;
+  height: max-content;
+}
+
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  align-self: flex-end;
+}
+
+span {
+  color: rgb(255, 255, 255);
+}
+
+p {
+  color: rgb(0, 0, 0);
+}
+
+@media(max-width: 1000px) {
+  .column-center {
+    grid-auto-flow: row;
+  }
+}
+
+</style>
+</head>
+<body> 
+
+    <div class="header">
+        <h3>Hi, my name is Vadzim, I am software quality engineer working at EPAM. Here you can find various projects done by me</h3>
+    </div>
+
+  
+    <section class="column-center">
+        <div class="column desc">
+          <img src="kr_logo.png" alt="Kaiserreich">
+          <h3>Kaiserreich Development</h3>
+          <span>Kaiserreich is one of the most popular Hearts of Iron IV mods with 800k subscribers. My contributions include coding, bugfixing, testing and reporting bugs</span>
+          <h3>Technologies - Paradox Scripting Language</h3>
+        </div>
+        <div class="column">
+          <img src="kr_logo_python.png" alt="Kaiserreich">
+          <h3>Kaiserreich Automated Testing</h3>
+          <span>To increase the quality of the mod development, I created a testing framework to perform integration tests of various mod files with more than 60 tests united by common classes and functions</span>
+          <h3>Technologies - Python, Pytest, Object-oriented programming, Jenkins</h3>
+        </div>
+        <div class="column">
+          <img src="kr_logo_python_data.png" alt="Kaiserreich">
+          <h3>Kaiserreich Data Generation and Reporting</h3>
+          <span>To get a lot of data for balancing for Kaiserreich, I implemented automated paralleled game running, log collecting, analyzing and reporting the results to Google form via Webdriver</span>
+          <h3>Technologies - Python, Webdriver</h3>
+        </div>
+    </section>
+
+    <div class="footer">
+        <p>Contacts:
+            Discord: Pelmen323
+        </p>
+    </div>
+
+</body>
+</html>
+
